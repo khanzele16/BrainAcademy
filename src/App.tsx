@@ -3,6 +3,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Main from "./pages/Main/Main";
 import { Route, Routes } from 'react-router-dom'
 import './assets/all.css'
+import './App.css'
 import Registration from "./pages/Auth/Registration/Registration";
 import Login from "./pages/Auth/Login/Login";
 

@@ -1,7 +1,5 @@
 import React from 'react'
 import setTitle from '../../utils/setTitle'
-import logo from '../../assets/images/лого.svg'
-
 function Main() {
 	setTitle('Онлайн-школа Brain Academy')
 	return (
