@@ -10,22 +10,22 @@ svg {
     width: 30px;
 }
 
-.Registration-form {
+.Login-form {
     text-align: center;
 }
 
-.Registration-list {
+.Login-list {
     align-items: center;
     display: flex;
     flex-direction: column;
     row-gap: 14px;
 }
 
-.Registration-title {
+.Login-title {
     margin-bottom: 30px;
 }
 
-input {
+.login-form input {
     font-size: 18px;
     width: 541px;
     padding: 14px 0px 14px 35px;
@@ -33,7 +33,7 @@ input {
     border-radius: 10px;
 }
 
-.button {
+.login-form .button {
     width: 100%;
     padding: 14px 0px;
     font-size: 20px;
@@ -45,19 +45,19 @@ input {
 
 
 
-.grey-text {
+.login-grey-text {
     margin-top: 31px;
     color: #7d7d7d;
 }
 
-.img-block {
+.login-img-block {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     column-gap: 25px;
 }
 
-.plitka {
+.login-plitka {
     width: 80px;
     height: 50px;
     border: 1px solid #dadada;
