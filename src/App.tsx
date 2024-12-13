@@ -1,5 +1,10 @@
 import React from "react";
-import "./App.css";
+import NotFound from "./pages/NotFound/NotFound";
+import Main from "./pages/Main/Main";
+import { Route, Routes } from 'react-router-dom'
+import './assets/all.css'
+import Registration from "./pages/Auth/Registration/Registration";
+import Login from "./pages/Auth/Login/Login";
 
 type routerItem = {
   path: string;
@@ -12,13 +17,31 @@ const router: routerItem[] = [
     component: <Main />
   },
   {
+    path: '/registration',
+    component: <Registration />
+  },
+  {
+    path: '/login',
+    component: <Login />
+  },
+  {
     path: '*',
-    component
+    component: <NotFound />
   }
 ]
 
 const App: React.FC = () => {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Routes>
+        {
+          router.map((item, index) => (
+            <Route key={index} path={item.path} element={item.component} />
+          ))
+        }
+      </Routes>
+    </div>
+  );
 };
 
 export default App;
